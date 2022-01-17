@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat w/ Thierry - Kokoa Clone</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-2x"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Thierry</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2020</div>
+
+      <div class="message-row">
+        <img src="screenshots/TT.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">Thierry</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hi nice to meet you!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="keyboard">
+      <form class="reply">
+        <div class="reply__column">
+          <i class="far fa-plus-square fa-lg"></i>
+        </div>
+        <div class="reply__column">
+          <input type="text" placeholder="Write a message..." />
+          <i class="far fa-smile-wink fa-lg"></i>
+          <button><i class="fas fa-arrow-up"></i></button>
+        </div>
+      </form>
+      <div class="keyboard-qwerty">
+        <div class="keyboard-qwerty__row">
+          <span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">A</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">Z</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">E</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">R</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">T</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">Y</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">U</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">I</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">O</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">P</span>
+        </div>
+        <div class="keyboard-qwerty__row">
+          <span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">Q</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">S</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">D</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">F</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">G</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">H</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">J</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">K</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">L</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">M</span>
+        </div>
+        <div class="keyboard-qwerty__row">
+          <span class="keyboard-qwerty__btn keyboard-qwerty__btn--grey"><i class="fas fa-arrow-up fa-lg"></i></span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">W</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">X</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">C</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">V</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">B</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">N</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--white">'</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--grey"
+            ><i class="fas fa-backspace fa-lg"></i
+          ></span>
+        </div>
+        <div class="keyboard-qwerty__row">
+          <span class="keyboard-qwerty__btn keyboard-qwerty__btn--grey">123</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--grey"><i class="far fa-grin fa-lg"></i></span
+          ><span class="keyboard-qwerty__btn  keyboard-qwerty__btn--white keyboard-qwerty__btn--espace">espace</span
+          ><span class="keyboard-qwerty__btn keyboard-qwerty__btn--grey keyboard-qwerty__btn--retour">retour</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="no-mobile">
+      <span>Your screen is too big sorry</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
